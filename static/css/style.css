@@ -93,8 +93,8 @@ body {
 #card--user .social-links a.telegram {
     background:#0088cc
 }
-#card--user .social-links a.medium {
-    background:#00ab6c
+#card--user .social-links a.instagram {
+    background:#fb3958
 }
 div#loader {
     height:100vh;width:100vw;position:fixed;top:0;left:0;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;justify-content:center;align-items:center;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;-webkit-opacity:1;-moz-opacity:1;opacity:1
