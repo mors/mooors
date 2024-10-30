@@ -78,19 +78,22 @@ body {
 #card--user .social-links a svg {
     margin-right:10px
 }
-#card--user .social-links a.flickr {
-    background:#0063DC
-}
-#card--user .social-links a.facebook {
-    background:#3C5898
+#card--user .social-links a.telegram {
+    background:#0088cc
 }
 #card--user .social-links a.twitter {
     background:#00aced
 }
-#card--user .social-links a.telegram {
-    background:#0088cc
-}
 #card--user .social-links a.instagram {
+    background:#e95950
+}
+#card--user .social-links a.facebook {
+    background:#3C5898
+}
+#card--user .social-links a.flickr {
+    background:#0063DC
+}
+#card--user .social-links a.spotify {
     background:#e95950
 }
 div#loader {
