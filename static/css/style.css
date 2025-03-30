@@ -78,9 +78,6 @@ body {
 #card--user .social-links a svg {
     margin-right:10px;
 }
-#card--user .social-links a.telegram {
-    background:#2ca5e0;
-}
 #card--user .social-links a.twitter {
     background:#000;
 }
