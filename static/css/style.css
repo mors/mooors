@@ -78,12 +78,6 @@ body {
 #card--user .social-links a svg {
     margin-right:10px;
 }
-#card--user .social-links a.twitter {
-    background:#000;
-}
-#card--user .social-links a.instagram {
-    background:#e4405f;
-}
 #card--user .social-links a.facebook {
     background:#1877f2;
 }
