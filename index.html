@@ -1,105 +1,192 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Indxr</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon" sizes="180x180" href="./static/images/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./static/images/icons/favicon-16x16.png">
-	<link rel="shortcut icon" href="./static/images/icons/favicon.ico">
-
-	<meta name="theme-color" content="#f7f7f7">
-
-	<meta property='og:title' content='Aamo D.'>
-	<meta property='og:description' content='Random Yesterdays for Tomorrow.'>
-	<meta property='og:url' content='https://mooors.com/'>
-	<meta property='og:site_name' content='Indxr'>
-	<meta property='og:type' content='website'>
-	<meta property='og:image' content='./static/images/avatar512.png'>
-
-	<link rel="stylesheet" type="text/css" href="./static/css/style.css" />
+<meta charset="utf-8">
+<title>Aamo's Server</title>
+<meta name="google-site-verification" content="qfNPN9bkD3KqWbJiYnOyx6Gcr7-dsB0HnxAC_lt9e8I" />
+<meta name="google-site-verification" content="AJQnCoRxduazaaKFKbAG9RE7HZWdqBy9MIPrzlLXGhI" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<style type="text/css">
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+html,body{width:100%;height:100%;background:#f0f0f0;}
+canvas{display:block;vertical-align:bottom;}
+#particles-js{width:100%;height:100%;}
+img{position:absolute;top:50%;left:50%;width:53px;height:53px;margin-top:-30px;margin-left:-30px;}
+</style>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '220736004925792');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=220736004925792&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
-
 <body>
-	<div id="loader">
-		<!-- Source: https://twitter.com/tobiasahlin -->
-		<div class="spinner">
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		</div>
-	</div>
+<script>
+/*<![CDATA[*/
+var emailriddlerarray=[109,111,111,111,114,115,64,111,117,116,108,111,111,107,46,99,111,109]
+var encryptedemail_dbx=''
+for (var i=0; i<emailriddlerarray.length; i++)
+    encryptedemail_dbx+=String.fromCharCode(emailriddlerarray[i])
+/*]]>*/
+</script>
+<script>document.write('<a href="mailto:'+encryptedemail_dbx+'">')</script>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjQ5MDNEQUNBQUQxMUUyOUI4MTlEODRGRkNGNDY0NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNDRCMjY5OENBQjYxMUUyOUI4MTlEODRGRkNGNDY0NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCNDkwM0Q4Q0FBRDExRTI5QjgxOUQ4NEZGQ0Y0NjQ2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCNDkwM0Q5Q0FBRDExRTI5QjgxOUQ4NEZGQ0Y0NjQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Ezu89AAAC89JREFUeNrkW12I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" />
+</a>
 
-	<div id="wrapper" class="container">
-		<div class="card-container">
-			<section class="card" id="card--user">
+<div id="particles-js"></div>
 
-				<header>
-					<div id="background">
-						<div id="background--image" style="background-image: url(./static/images/28513873.jpg)"></div>
-					</div>
-					<figure class="avatar">
-						<img src="./static/images/avatar100.png" srcset="./static/images/avatar200.png 2x" alt="avatar" />
-					</figure>
-				</header>
+<script src="https://cdn.jsdelivr.net/particles.js/1.1.0/particles.min.js"></script>
+<script>
+/* DESKTOP */
+function pJS_desktop(){
+  particlesJS('particles-js', {
+    particles: {
+      color: '#0de7b7',
+      shape: 'circle',
+      opacity: 1,
+      size: 2.5,
+      size_random: true,
+      nb: 150,
+      line_linked: {
+        enable_auto: true,
+        distance: 250,
+        color: '#0de7b7',
+        opacity: 0.5,
+        width: 1,
+        condensed_mode: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 600
+        }
+      },
+      anim: {
+        enable: true,
+        speed: 3
+      }
+    },
+    interactivity: {
+      enable: true,
+      mouse: {
+        distance: 200
+      },
+      detect_on: 'canvas',
+      mode: 'grab',
+      line_linked: {
+        opacity: .5
+      },
+      events: {
+        onclick: {
+          enable: true,
+          mode: 'push',
+          nb: 4
+        }
+      }
+    },
+    retina_detect: true
+  });
+}
 
-				<section class="info">
-					<h1 class="name">H^e1lo, WWẄ&orrld!</h1>
-					<!--p class="bio">Random Yesterdays for Tomorrow</p-->
-				</section>
+/* MOBILE / TABLET */
+function pJS_mobile(){
+  particlesJS('particles-js', {
+    particles: {
+      color: '#fff',
+      shape: 'circle',
+      opacity: 1,
+      size: 2.5,
+      size_random: true,
+      nb: 40,
+      line_linked: {
+        enable_auto: false,
+        distance: 250,
+        color: '#fff',
+        opacity: 0.5,
+        width: 1,
+        condensed_mode: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 600
+        }
+      },
+      anim: {
+        enable: true,
+        speed: 3
+      }
+    },
+    interactivity: {
+      enable: false,
+      mouse: {
+        distance: 200
+      },
+      detect_on: 'canvas',
+      mode: 'grab',
+      line_linked: {
+        opacity: .5
+      },
+      events: {
+        onclick: {
+          enable: true,
+          mode: 'push',
+          nb: 4
+        }
+      }
+    },
+    retina_detect: true
+  });
+}
 
-				<footer class="social-links is-hidden">
+/* LAUNCH */
+if(window.innerWidth > 1100){
+  pJS_desktop();
+}else{
+  pJS_mobile();
+}
 
-					<a href="https://www.facebook.com/mooors" target="_blank" class="facebook">
-						<svg class="icon icon-facebook">
-						<use xlink:href="#icon-facebook"></use>
-						</svg>
-						<span>Facebook</span>
-					</a>
-					<a href="http://flickr.com/photos/mors/" target="_blank" class="flickr">
-						<svg class="icon icon-flickr">
-						<use xlink:href="#icon-flickr"></use>
-						</svg>
-						<span>Flickr</span>
-					</a>
-					
-				</footer>
+/* on resize */
+window.addEventListener('resize', function() {
+  checkOnResize();
+}, true);
 
-			</section>
-		</div>
-	</div>
+function checkOnResize(){
+  if(window.innerWidth > 1100){
+    if(pJS.particles.nb != 150){
+      console.log('desktop mode')
+      pJS.fn.vendors.destroy();
+      pJS_desktop();
+    }
+  }else{
+    if(pJS.particles.nb == 150){
+      console.log('mobile mode');
+      pJS.fn.vendors.destroy();
+      pJS_mobile();
+    }
+  }
+}
+</script>
 
-	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-		<!-- Source: https://icomoon.io -->
-		<symbol id="icon-facebook" viewBox="0 0 1024 1024">
-			<title>facebook</title>
-			<path d="M1023.919 511.962c0-282.748-229.21-511.962-511.957-511.962s-511.962 229.214-511.962 511.962c0 255.535 187.217 467.332 431.966 505.741v-357.751h-129.988v-147.989h129.988v-112.794c0-128.311 76.433-199.185 193.374-199.185 56.013 0 114.603 10.001 114.603 10.001v125.99h-64.555c-63.599 0-83.435 39.462-83.435 79.949v96.038h141.99l-22.699 147.989h-119.292v357.751c244.753-38.409 431.966-250.206 431.966-505.741z"></path>
-		</symbol>
-
-		<symbol id="icon-flickr" viewBox="0 0 1024 1024">
-			<title>flickr</title>
-			<path d="M0 512c0 131.157 106.411 237.397 237.44 237.397 131.2 0 237.611-106.24 237.611-237.397s-106.368-237.397-237.611-237.397c-130.987 0-237.44 106.24-237.44 237.397zM548.949 512c0 131.157 106.368 237.397 237.525 237.397 130.688 0 237.525-106.24 237.525-237.397s-106.325-237.397-237.397-237.397c-131.2 0-237.653 106.24-237.653 237.397z"></path>
-		</symbol>
-
-	</svg>
-
-	<script type="text/javascript">
-		if (top.location !== self.location) {
-			top.location = self.location
-		};
-	</script>
-
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function () {
-				document.body.classList.add('loaded');
-			});
-		};
-	</script>
 </body>
-
 </html>
